@@ -120,6 +120,7 @@ export default function Testimonial() {
                           <div className="bg-white shadow-great rounded-xl p-6 relative z-20">
                             <span className="w-12 h-12 absolute top-0 left-0 overflow-hidden transform -translate-x-1/2 -translate-y-1/2 rounded-full flex-none mr-3">
                               <Image
+                                alt={`slide-${item.id}`}
                                 className="object-cover"
                                 layout="responsive"
                                 width="100%"

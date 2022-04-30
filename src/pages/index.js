@@ -62,7 +62,7 @@ export default function Home() {
                 </Link>
                 <button className="flex items-center">
                   <span className="mr-6 bg-accent-2 text-white inline-flex items-center justify-center px-4 py-4 rounded-full shadow-accent-2/30 shadow-[0_15px_30px]">
-                    <span class="material-icons">play_arrow</span>
+                    <span className="material-icons">play_arrow</span>
                   </span>
                   <span className="text-gray-500">Play Demo</span>
                 </button>
@@ -71,6 +71,7 @@ export default function Home() {
             <div className="w-[783px] h-[764px] pt-24 relative">
               <div className="absolute w-[137px] h-[95px] top-44 left-40 z-30">
                 <Image
+                  alt="plane"
                   layout="responsive"
                   width="100%"
                   height="100%"
@@ -79,6 +80,7 @@ export default function Home() {
               </div>
               <div className="absolute w-[137px] h-[95px] top-56 right-8 z-10">
                 <Image
+                  alt="plane"
                   layout="responsive"
                   width="100%"
                   height="100%"
@@ -87,6 +89,7 @@ export default function Home() {
               </div>
               <div className="relative z-20 transform -translate-x-16">
                 <Image
+                  alt="hero traveller"
                   priority
                   layout="responsive"
                   width="100%"
@@ -117,6 +120,7 @@ export default function Home() {
                 <div className="relative mb-6 inline-flex h-28">
                   <div className="z-10 absolute transform translate-y-1/2 -translate-x-1/2 -right-11">
                     <Image
+                      alt="radar"
                       layout="fixed"
                       width={60}
                       height={60}
@@ -137,6 +141,7 @@ export default function Home() {
                 <div className="relative mb-6 inline-flex h-28">
                   <div className="z-10 absolute transform -translate-x-1/2">
                     <Image
+                      alt="plane"
                       layout="fixed"
                       width={146}
                       height={133}
@@ -157,6 +162,7 @@ export default function Home() {
                 <div className="relative mb-6 inline-flex h-28">
                   <div className="z-10 absolute transform translate-y-1/2 -translate-x-1/2 -right-8 top-2">
                     <Image
+                      alt="mic"
                       layout="fixed"
                       width={40}
                       height={69}
@@ -178,6 +184,7 @@ export default function Home() {
                 <div className="relative mb-6 inline-flex h-28">
                   <div className="z-10 absolute transform translate-y-1/2 -translate-x-1/2 -right-10 top-3">
                     <Image
+                      alt="gear"
                       layout="fixed"
                       width={50}
                       height={50}
@@ -214,6 +221,7 @@ export default function Home() {
               <div className="rounded-3xl pb-10 shadow-great bg-white flex flex-col">
                 <div className="rounded-tr-3xl rounded-tl-3xl overflow-hidden relative h-96">
                   <Image
+                    alt="destination 1"
                     layout="fill"
                     className="object-cover"
                     src="/images/destination-1.jpg"
@@ -225,7 +233,7 @@ export default function Home() {
                     <h6 className="text-lg">$5,42k</h6>
                   </div>
                   <div className="pt-4 px-5 flex items-center">
-                    <span class="material-icons mr-2">near_me</span>
+                    <span className="material-icons mr-2">near_me</span>
                     <span className="">10 Days Trip</span>
                   </div>
                 </div>
@@ -235,6 +243,7 @@ export default function Home() {
               <div className="rounded-3xl pb-10 shadow-great bg-white flex flex-col">
                 <div className="rounded-tr-3xl rounded-tl-3xl overflow-hidden relative h-96">
                   <Image
+                    alt="destination 2"
                     layout="fill"
                     className="object-cover"
                     src="/images/destination-2.jpg"
@@ -246,7 +255,7 @@ export default function Home() {
                     <h6 className="text-lg">$4,2k</h6>
                   </div>
                   <div className="pt-4 px-5 flex items-center">
-                    <span class="material-icons mr-2">near_me</span>
+                    <span className="material-icons mr-2">near_me</span>
                     <span className="">12 Days Trip</span>
                   </div>
                 </div>
@@ -256,6 +265,7 @@ export default function Home() {
               <div className="rounded-3xl pb-10 shadow-great bg-white flex flex-col">
                 <div className="rounded-tr-3xl rounded-tl-3xl overflow-hidden relative h-96">
                   <Image
+                    alt="destination 3"
                     layout="fill"
                     className="object-cover"
                     src="/images/destination-3.jpg"
@@ -267,7 +277,7 @@ export default function Home() {
                     <h6 className="text-lg">$15k</h6>
                   </div>
                   <div className="pt-4 px-5 flex items-center">
-                    <span class="material-icons mr-2">near_me</span>
+                    <span className="material-icons mr-2">near_me</span>
                     <span className="">28 Days Trip</span>
                   </div>
                 </div>
@@ -291,7 +301,7 @@ export default function Home() {
                 <ul className="flex flex-col gap-y-10 pr-10">
                   <li className="flex items-center">
                     <span className="bg-accent-1 rounded-xl flex flex-none text-white items-center justify-center w-12 h-12">
-                      <span class="material-icons">navigation</span>
+                      <span className="material-icons">navigation</span>
                     </span>
                     <div className="flex flex-col ml-4 leading-5">
                       <h6 className="font-bold mb-1 text-gray-500">
@@ -306,7 +316,7 @@ export default function Home() {
 
                   <li className="flex items-center">
                     <span className="bg-accent-2 rounded-xl flex flex-none text-white items-center justify-center w-12 h-12">
-                      <span class="material-icons">credit_card</span>
+                      <span className="material-icons">credit_card</span>
                     </span>
                     <div className="flex flex-col ml-4 leading-5">
                       <h6 className="font-bold mb-1 text-gray-500">
@@ -321,7 +331,7 @@ export default function Home() {
 
                   <li className="flex items-center">
                     <span className="bg-accent-6 rounded-xl flex flex-none text-white items-center justify-center w-12 h-12">
-                      <span class="material-icons">plane</span>
+                      <span className="material-icons">plane</span>
                     </span>
                     <div className="flex flex-col ml-4 leading-5">
                       <h6 className="font-bold mb-1 text-gray-500">
@@ -344,6 +354,7 @@ export default function Home() {
                   <div className="flex">
                     <span className="w-12 h-12 overflow-hidden rounded-full flex-none mr-3">
                       <Image
+                        alt="destination 5"
                         layout="responsive"
                         width="100%"
                         height="100%"
@@ -367,6 +378,7 @@ export default function Home() {
                 <div className="bg-white rounded-2xl w-full h-full relative z-20 shadow-great pt-4 pb-5">
                   <div className="mx-4 rounded-3xl h-40 relative overflow-hidden mb-6">
                     <Image
+                      alt="destination 4"
                       layout="fill"
                       className="object-cover"
                       src="/images/destination-4.jpg"
@@ -417,6 +429,7 @@ export default function Home() {
             <div className="w-1/5 px-4">
               <div className="h-20 px-4 py-4 relative grayscale hover:grayscale-0 bg-white transform hover:-translate-y-1 hover:shadow-great rounded-2xl transition-all duration-300">
                 <Image
+                  alt="client 1"
                   className="object-none"
                   layout="fill"
                   src={`/images/image 27.png`}
@@ -426,6 +439,7 @@ export default function Home() {
             <div className="w-1/5 px-4">
               <div className="h-20 px-4 py-4 relative grayscale hover:grayscale-0 bg-white transform hover:-translate-y-1 hover:shadow-great rounded-2xl transition-all duration-300">
                 <Image
+                  alt="client 2"
                   className="object-none"
                   layout="fill"
                   src={`/images/image 28.png`}
@@ -435,6 +449,7 @@ export default function Home() {
             <div className="w-1/5 px-4">
               <div className="h-20 px-4 py-4 relative grayscale hover:grayscale-0 bg-white transform hover:-translate-y-1 hover:shadow-great rounded-2xl transition-all duration-300">
                 <Image
+                  alt="client 3"
                   className="object-none"
                   layout="fill"
                   src={`/images/image 29.png`}
@@ -444,6 +459,7 @@ export default function Home() {
             <div className="w-1/5 px-4">
               <div className="h-20 px-4 py-4 relative grayscale hover:grayscale-0 bg-white transform hover:-translate-y-1 hover:shadow-great rounded-2xl transition-all duration-300">
                 <Image
+                  alt="client 4"
                   className="object-none"
                   layout="fill"
                   src={`/images/image 30.png`}
@@ -453,6 +469,7 @@ export default function Home() {
             <div className="w-1/5 px-4">
               <div className="h-20 px-4 py-4 relative grayscale hover:grayscale-0 bg-white transform hover:-translate-y-1 hover:shadow-great rounded-2xl transition-all duration-300">
                 <Image
+                  alt="client 5"
                   className="object-none"
                   layout="fill"
                   src={`/images/image 31.png`}
@@ -644,6 +661,7 @@ export default function Home() {
                     className="relative w-full h-full flex overflow-hidden rounded-full"
                   >
                     <Image
+                      alt="download google play"
                       className="object-contain"
                       layout="fill"
                       src="/images/Google Play.png"
@@ -658,6 +676,7 @@ export default function Home() {
                     className="relative w-full h-full flex overflow-hidden rounded-full"
                   >
                     <Image
+                      alt="download apple store"
                       className="object-contain"
                       layout="fill"
                       src="/images/Play Store.png"
