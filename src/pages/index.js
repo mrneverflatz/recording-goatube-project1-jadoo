@@ -19,8 +19,26 @@ export default function Home() {
     <div className="">
       <Head>
         <title>Jadoo</title>
-        <meta name="description" content="Jadoo App Travel" />
+        <meta
+          name="description"
+          content="travel app, life app, aplikasi jalan-jalan, pesan guide, dan sebagainya"
+        />
         <link rel="icon" href="/favicon.ico" />
+
+        <meta
+          property="og:url"
+          content="https://recording-goatube-project1-jadoo.vercel.app"
+        />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="Jadoo" />
+        <meta
+          property="og:description"
+          content="travel app, life app, aplikasi jalan-jalan, pesan guide, dan sebagainya"
+        />
+        <meta
+          property="og:image"
+          content="https://recording-goatube-project1-jadoo.vercel.app/aplikasi-travel-online.jpg"
+        />
       </Head>
 
       <div className="absolute z-10 w-full py-12">
@@ -505,9 +523,11 @@ export default function Home() {
                     </h6>
                     <form className="flex justify-center">
                       <fieldset className="relative mr-8">
-                        <span className="material-icons text-gray-500 absolute h-full w-16 flex items-center justify-center">
-                          mail_outline
-                        </span>
+                        <div className="w-16 h-16 flex justify-center items-center absolute">
+                          <span className="material-icons text-gray-500">
+                            mail_outline
+                          </span>
+                        </div>
                         <input
                           type="text"
                           placeholder="Your Email"
