@@ -12,6 +12,7 @@
     "next": "12.1.4",
     "react": "18.0.0",
     "react-dom": "18.0.0",
+    "react-transition-group": "^4.4.2",
     "swiper": "8.1.4"
   },
   "devDependencies": {

@@ -14,6 +14,8 @@ import Facebook from "images/facebook.svg";
 import Instagram from "images/instagram.svg";
 import Twitter from "images/twitter.svg";
 
+import Modal from "components/Modal";
+
 export default function Home() {
   return (
     <div className="">
@@ -73,19 +75,41 @@ export default function Home() {
               </p>
 
               <div className="flex">
-                <Link href="/">
+                <Link href="#section-category">
                   <a className="mr-11 bg-accent-1 shadow-accent-1/10 shadow-[0_20px_35px] px-6 py-4 text-white rounded-xl">
                     Find out more
                   </a>
                 </Link>
-                <button className="flex items-center">
-                  <span className="mr-6 bg-accent-2 text-white inline-flex items-center justify-center px-4 py-4 rounded-full shadow-accent-2/30 shadow-[0_15px_30px]">
-                    <span className="material-icons">play_arrow</span>
-                  </span>
-                  <span className="hidden lg:block text-gray-500">
-                    Play Demo
-                  </span>
-                </button>
+                {/* <button
+                  className="flex items-center"
+                  onClick={() => setActive((prev) => !prev)}
+                ></button> */}
+
+                <Link href={`/?modal=1&id=play-demo`}>
+                  <a className="flex items-center">
+                    <span className="mr-6 bg-accent-2 text-white inline-flex items-center justify-center px-4 py-4 rounded-full shadow-accent-2/30 shadow-[0_15px_30px]">
+                      <span className="material-icons">play_arrow</span>
+                    </span>
+                    <span className="hidden lg:block text-gray-500">
+                      Play Demo
+                    </span>
+                  </a>
+                </Link>
+
+                <Modal id="play-demo" wrapperClassName="w-[700px]">
+                  <h3 className="">Setup Git SSH</h3>
+                  <div className="aspect-video">
+                    <iframe
+                      width="100%"
+                      height="100%"
+                      src="https://www.youtube.com/embed/nRwEq6xKBxk"
+                      title="YouTube video player"
+                      frameborder="0"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                      allowfullscreen
+                    ></iframe>
+                  </div>
+                </Modal>
               </div>
             </div>
             <div className="hidden lg:block w-[783px] h-[764px] pt-24 relative">
@@ -122,7 +146,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="mb-32">
+      <section className="mb-32 scroll-mt-20" id="section-category">
         <div className="max-w-7xl mx-auto relative px-4">
           <div className="absolute w-36 h-36 lg:-right-10 -top-10">
             <DecorPlus1 className="decor-plus-style-1" />
