@@ -9,14 +9,21 @@ export default function Header() {
 
   useEffect(() => {
     function responsiveNavbar() {
-      const viewWidth = window.outerWidth;
+      const viewWidth = window.innerWidth;
       const sm = 640;
 
-      if (viewWidth < sm && viewWidth > sm) setMenu(false);
+      if (viewWidth > sm) {
+        setMenu(false);
+      }
     }
+
     responsiveNavbar();
 
     window.addEventListener('resize', responsiveNavbar);
+
+    return () => {
+      window.removeEventListener('resize', responsiveNavbar);
+    };
   }, []);
 
   return (
